@@ -1,17 +1,16 @@
 import app from "./app.js";
-import { DB_PORT } from "./config.js";
+import { PORT } from "./config.js";
 import {db} from './database/db.js'
 import  './models/db_products.js';
 
-const port = DB_PORT;
 
 async function main(){
     try {
         await db.authenticate();
         console.log('Connection has been established successfully.');
         // await db.sync();
-        app.listen(port, () => {
-            console.log(`Server on port ${port}`);
+        app.listen(PORT, () => {
+            console.log(`Server on PORT ${PORT}`);
         });
         
       } catch (error) {
