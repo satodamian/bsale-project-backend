@@ -4,8 +4,8 @@
 Este proyecto consta como una evaluacion de la creación de un backend de productos y categorías, utilizando NodeJS y Mysql.
 
 # Endpoints
-GET /product
-GET /product/:term
+ * GET /product
+ * GET /product/:term
 
 
 ###  Observacion
